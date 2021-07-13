@@ -7,7 +7,10 @@
   "license": "ISC",
   "main": "lib/vite-project.js",
   "dependencies": {
-    "vite": "^2.4.2"
+    "@vitejs/plugin-vue": "^1.2.5",
+    "@vue/compiler-sfc": "^3.1.4",
+    "vite": "^2.4.2",
+    "vue": "^3.1.4"
   },
   "scripts": {
     "dev": "vite"
