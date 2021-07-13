@@ -8,7 +8,6 @@ function moduleRewritePlugin({ app, root }) {
     // 里面的中间件已经执行完成, 响应体已经有内容了
     if (ctx.body && ctx.response.is('js')) {
       const originContent = await readBody(ctx.body);
-      console.log('originContent', originContent);
       const rewriteContent = await rewriteImports(originContent);
       ctx.body = rewriteContent;
     }

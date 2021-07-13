@@ -10,12 +10,16 @@ function readBody(body) {
           buffers.push(chunk);
         })
         .on('end', () => {
-          resolve(Buffer.concat(buffers).toString('utf-8'));
+          resolve(Buffer.concat(buffers).toString());
         });
     });
   } else {
     // 如响应体是一个字符串, buffer或者其他类型
-    return body.toString('utf-8');
+    if (body) {
+      return body.toString();
+    } else {
+      return body;
+    }
   }
 }
 

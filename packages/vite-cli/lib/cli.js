@@ -3,6 +3,7 @@ const moduleRewritePlugin = require('./moduleRewritePlugin');
 const serveStaticPlugin = require('./serveStaticPlugin');
 const resolveModulePlugin = require('./resolveModulePlugin');
 const processPlugin = require('./processPlugin');
+const vuePlugin = require('./vuePlugin');
 
 function createServer() {
   const app = new Koa();
@@ -17,8 +18,9 @@ function createServer() {
   const resolvedPlugins = [
     processPlugin,
     moduleRewritePlugin,
-    serveStaticPlugin,
     resolveModulePlugin,
+    vuePlugin,
+    serveStaticPlugin,
   ];
   resolvedPlugins.forEach((plugin) => plugin(context));
   return app;

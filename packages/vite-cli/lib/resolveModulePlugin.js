@@ -29,7 +29,7 @@ async function resolveModule(root, moduleId) {
   if (moduleId === 'vue') {
     moduleId = '@vue/runtime-dom';
     len = 5;
-  } else if (moduleId.startWith('@vue')) {
+  } else if (moduleId.startsWith('@vue')) {
     len = 5;
   } else {
     // 只能拿到package中main对应的文件

@@ -12,8 +12,10 @@ function processPlugin({ app, root }) {
   `;
   app.use(async (ctx, next) => {
     await next();
-    const html = readBody(ctx.body);
+    // if (ctx.path.endsWith('.html')) {
+    const html = await readBody(ctx.body);
     ctx.body = html.replace(/<head>/, `${injection}`);
+    // }
   });
 }
 
