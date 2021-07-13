@@ -31,7 +31,7 @@ import会自动触发浏览器的请求
 
 ## vuePlugin
 
-处理vue文件
+处理vue文件(2次http请求)
 - 将`.vue`文件转换成路径带有`?type=template`的js文件
 - 注入`__render`
 - 再次请求路径带有`?type=template`的js文件
