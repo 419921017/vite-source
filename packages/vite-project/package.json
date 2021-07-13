@@ -1,0 +1,15 @@
+{
+  "name": "vite-project",
+  "version": "0.0.0",
+  "description": "use vite",
+  "author": "power_840 <liuyu19921017@gmail.com>",
+  "homepage": "https://github.com/419921017/vite-source#readme",
+  "license": "ISC",
+  "main": "lib/vite-project.js",
+  "dependencies": {
+    "vite": "^2.4.2"
+  },
+  "scripts": {
+    "dev": "vite"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "vite-cli",
+  "version": "0.0.0",
+  "description": "vite-cli",
+  "author": "power_840 <liuyu19921017@gmail.com>",
+  "homepage": "https://github.com/419921017/vite-source#readme",
+  "main": "lib/vite-cli.js",
+  "dependencies": {
+    "es-module-lexer": "^0.7.1",
+    "koa": "^2.13.1",
+    "koa-static": "^5.0.0",
+    "magic-string": "^0.25.7",
+    "nodemon": "^2.0.12"
+  },
+  "bin": {
+    "vite-cli": "./bin/vite.js"
+  }
+}
