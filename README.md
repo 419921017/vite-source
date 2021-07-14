@@ -1,13 +1,13 @@
 # vite-source
 
-
 ## vite-cli
 
 ## bin/vite执行的文件
 
-本质上是个koa服务器, 通过浏览器自带的es module实现
+1. 本质上是个koa服务器
+2. 通过浏览器自带的es module实现`<script type="module"></script>`
 
-import会自动触发浏览器的请求
+3. import会自动触发浏览器的http请求
 
 ## moduleRewritePlugin
 

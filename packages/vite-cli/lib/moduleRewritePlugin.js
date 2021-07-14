@@ -19,6 +19,7 @@ async function rewriteImports(source) {
   if (imports.length > 0) {
     let magicString = new MagicString(source);
     for (let i = 0; i < imports.length; i++) {
+      // name, start, end
       let { n, s, e } = imports[i];
 
       // 开始不是"." 也不是/ ","说明是个模块
